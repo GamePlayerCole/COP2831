@@ -1,3 +1,8 @@
-#Textbook Data Files #
-######################
+# Textbook Data Files #
+#######################
 dataFilesForXMLTextbook/
+
+
+# File Extensions #
+###################
+*.zip
