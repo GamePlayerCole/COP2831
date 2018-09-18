@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<!--
+A collection of DVDs
+-->
+
+<dvdLibrary>
+  <dvd isbn="1-451">
+    <title>Star Wars A New Hope</title>
+    <desc>In a galaxy far far away a young boy overthrows the empire</desc>
+    <year>1977</year>
+    <company>20th Century Fox</company>
+    <characters>
+      <character>Luke</character>
+      <character>Han</character>
+      <character>Darth Vader</character>
+    </characters>
+    <bonus num="2">
+      <feature>behind the scenes</feature>
+      <feature>outtakes</feature>
+    </bonus>
+    <purchased from="sister">
+      <price>19.99</price>
+      <store>Walmart</store>
+      <date>3/10/12</date>
+    </purchased>
+  </dvd>
+</dvdLibrary>

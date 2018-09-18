@@ -1,0 +1,27 @@
+<!--
+
+This DTD is for coleHempClassWork2-dvdLibrary.xml
+
+Author: Cole Hemp
+Date: Sept. 12, 2018
+FileName: coleHempClassWork2-dvdLibrary.dtd
+DTD For FileName: coleHempClassWork2-dvdLibrary.xml
+
+-->
+
+<!ELEMENT dvdLibrary (dvd+)>
+     <!ELEMENT dvd(title, desc, year, company, characters, bonus, purchased)>
+          <!ELEMENT title (#PCDATA)>
+          <!ELEMENT desc (#PCDATA)>
+               <!ELEMENT characters (character+)>
+               <!ELEMENT character (#PCDATA)>
+          <!ELEMENT bonus (feature?)>
+               <!ELEMENT feature (#PCDATA)>
+          <!ELEMENT purchased (price, store, date)>
+               <!ELEMENT price (#PCDATA)>
+               <!ELEMENT store (#PCDATA)>
+               <!ELEMENT date (#PCDATA)>
+
+<!ATTLIST dvd isbn CDATA #REQUIRED>
+<!ATTLIST bonus num CDATA #IMPLIED>
+<!ATTLIST purchased from (mom | dad | sister | brother | grandmother) #REQUIRED>
