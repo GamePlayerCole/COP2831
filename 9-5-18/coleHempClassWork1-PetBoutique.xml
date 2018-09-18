@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+    This document contains data on SJB Pet Boutique
+    Author: Cole Hemp
+    Year: 2018
+-->
+<products>
+  <product>
+    <productName>Dog Shirt Gift Basket</productName>
+    <manufacturer>SJB Pet Boutique</manufacturer>
+    <description>Something for every day of the week</description>
+    <price currency="USD">35.99</price>
+    <productItems>1200, 1201, 1202, 1203</productItems>
+  </product>
+  <!--New Item-->
+  <product>
+    <productName>Dog Shirt Gift Basket</productName>
+    <manufacturer>SJB Pet Boutique</manufacturer>
+    <description>Something for every day of the week</description>
+    <price currency="USD">35.99</price>
+    <productItems>1200, 1201, 1202, 1203</productItems>
+  </product>
+</products>
