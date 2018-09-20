@@ -5,7 +5,7 @@ Sept. 19th, 2018
 hempClassWork3-museum.xml
 -->
 
-<artworks xlmns:xsi="http://www.w3.org/2001/XMLSchema"
+<artworks xlmns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:noNamespaceSchemaLocation="hempClassWork3-museumSchema.xsd">
     <artwork>
         <title>Starry Night</title>
