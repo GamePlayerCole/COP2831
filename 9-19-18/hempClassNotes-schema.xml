@@ -1,0 +1,60 @@
+<!-- XML -->
+<address>
+    <street>123 Elm Street</street>
+    <city>Hattonfield</city>
+    <state>IL</state>
+    <country>USA</country>
+</address>
+
+<!--Schema - Defining an element with nested children-->
+
+<!--Sequence: requires child elements to appear in order listed-->
+<xs:element name="address">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="street" type="xs:string"/>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="state" type="xs:string"/>
+            <xs:element name="country" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<!--#####################################################-->
+<!-- XML -->
+<address>
+    <street>123 Elm Street</street>
+    <city>Hattonfield</city>
+    <state>IL</state>
+    <country>USA</country>
+</address>
+<cityState>
+    <city>Mapleton</city>
+    <state>IL</state>
+</cityState>
+
+<!-- Schema -->
+    <xs:element name="street" type="xs:string"/>
+    <xs:element name="city" type="xs:string"/>
+    <xs:element name="state" type="xs:string"/>
+    <xs:element name="country" type="xs:string"/>
+
+    <xs:element name="address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="street"/>
+                <xs:element ref="city"/>
+                <xs:element ref="state"/>
+                <xs:element ref="country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cityState">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="city"/>
+                <xs:element ref="state"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>

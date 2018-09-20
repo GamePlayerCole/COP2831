@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+Cole Hemp
+Sept. 19th, 2018
+hempClassWork3-museum.xml
+-->
+
+<artworks xlmns:xsi="http://www.w3.org/2001/XMLSchema"
+                xsi:noNamespaceSchemaLocation="hempClassWork3-museumSchema.xsd">
+    <artwork>
+        <title>Starry Night</title>
+        <medium>Canvas</medium>
+        <desc>Created by Vangouh</desc>
+        <gallery>Mueseum of Modern Art</gallery>
+    </artwork>
+</artworks>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+Cole Hemp
+Sept. 19th, 2018
+hempClassWork3-museum.xsd
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!--Simple Types-->
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="medium" type="xs:string"/>
+    <xs:element name="desc" type="xs:string"/>
+    <xs:element name="gallery" type="xs:string"/>
+
+    <!--Complex Types-->
+    <xs:element name="artworks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="artwork" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="artwork">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Title"/>
+                <xs:element ref="medium"/>
+                <xs:element ref="desc"/>
+                <xs:element ref="gallery"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+
+
+    <!-- This also works -->
+
+<!--
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    ###Simple Types##
+    <xs:element name="title" type="xs:string"/>
+    <xs:element name="medium" type="xs:string"/>
+    <xs:element name="desc" type="xs:string"/>
+    <xs:element name="gallery" type="xs:string"/>
+
+    ###Complex Types###
+    ###artwork needs to go before artworks since it's referenced.###
+    <xs:element name="artwork">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Title"/>
+                <xs:element ref="medium"/>
+                <xs:element ref="desc"/>
+                <xs:element ref="gallery"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="artworks">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="artwork">
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+-->
